@@ -10,3 +10,7 @@ const macTimeDisplay = `${day.slice(0,3)} ${date} ${month.slice(0,3)} ${time}`;
 // Before running code, answer the following - write down your answers:
 // a) how many function calls are there in this file?
 // b) predict and explain what macTimeDisplay will evaluate to. You can use documentation to look up slice
+
+/* a)two one of the day and other for the month
+
+b) it will create a combination of day, month and date
