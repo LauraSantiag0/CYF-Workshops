@@ -3,7 +3,7 @@
 
 let count = 0;
 
-while(count < 10) {
+while(count < 100) {
     count++;
     console.log('*'.repeat(count))
 }
