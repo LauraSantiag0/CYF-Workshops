@@ -5,19 +5,20 @@
 
 function printSaladRecipe(forPerson) {
     const saladRecipe = {
-        "name": "salad",
-        "ingredients": ["lettuce", "corn", "carrots", "cucumber"],
-        "rating_out_of_10": 8,
-        "steps": [
+        name: "salad",
+        ingredients: ["lettuce", "corn", "carrots", "cucumber"],
+        rating_out_of_10: 8,
+        steps: [
             "Shred the lettuce",
             "Cut the carrots into small pieces",
             "Slice the cucumber",
             "Mix all the vegetables together in a bowl",
         ]
+
     };
 
     if (forPerson.eatsMeat) {
-        saladRecipe.push("chicken");
+        saladRecipe.ingredients.push("chicken");
         saladRecipe.steps.push("Mix in the chicken");
     }
 
@@ -32,15 +33,15 @@ function printSaladRecipe(forPerson) {
 }
 
 const person1 = {
-    "name": "Ola",
-    "eatsMeat": true,
+    name: "Ola",
+    eatsMeat: true,
 };
 
 const person2 = {
-    "name": "Steve",
-    "eatsMeat": false,
+    name: "Steve",
+    eatsMeat: false,
 };
 
 printSaladRecipe(person1);
-console.log("");
+console.log("Ola");
 printSaladRecipe(person2);
